@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            position: relative;
+            height: 500px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+		body{
+			background: linear-gradient(45deg, #212121, #2B2B31, #36383F);
+			color:white;
+		}
+        .hero h1 {
+            font-size: 4rem;
+        }
+		.hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+			opacity:0.5;
+        }
+		h3{
+			color:cyan;
+		}
+		.mydesc{
+			text-align:justify;
+		}
+        .project {
+            margin-bottom: 30px;
+        }
+		.project img {
+            width: 500px;
+			height:180px;
+			border-radius:10px;
+        }
+        .contact-form {
+            margin-top: 50px;
+        }
+		.project-desc{
+			text-align: justify;
+		}
+		.contact-links a {
+            display: inline-block;
+			width:50px;
+			height:50px;
+            font-size: 1.2rem;
+			border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Jamir Portfólio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre Mim</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projetos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+	<video autoplay muted loop>
+        <source src="./background-video.webm" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <h1 style="text-align:center;">Bem-vindo ao Meu Portfólio</h1>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="container my-5">
+	<img src="https://avatars.githubusercontent.com/u/89231614?v=4" style="width: 150px; height: 150px; border-radius: 50%">
+    <h2>Sobre Mim</h2>
+    <p class="mydesc">Graduando em Sistemas de Informação, Faculdade de Computação, Campus Universitário de Castanhal-UFPA. Faz parte do grupo de pesquisa em Bioinformática, Ômicas e Desenvolvimento <a href="www.biod.ufpa.br">BIOD</a>, atuando com desenvolvimento de software, análise de dados biológicos.</p>
+	<p class="mydesc">Atualmente, estou focado em desenvolvimento Android e me aprofundando no estudo dessa tecnologia com Kotlin. Estou entusiasmado com as possibilidades que o Kotlin oferece para criar aplicativos robustos e eficientes para a plataforma Android.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container my-5">
+    <h2>Meus Projetos</h2>
+    <div class="row">
+        <div class="col-md-4 project">
+            <img src="./fxtrack.png" class="img-fluid" alt="Projeto 1">
+            <h3><a href="https://play.google.com/store/apps/details?id=com.jamir.nasc.FXTrack&pcampaignid=web_share">Forex Track</a></h3>
+            <p class="project-desc">o Forex Track oferece uma ampla gama de funcionalidades, incluindo análise detalhada de pares de moedas, além dos indicadores essenciais RSI, Estocástico, MACD e Médias Móveis. Com uma interface intuitiva e atualizações em tempo real, o Forex Track é a ferramenta para auxiliar operações no forex fornecendo possíveis sinais de compra ou venda de acordo com o modelo matemático de cada indicador.</p>
+        </div>
+        <div class="col-md-4 project">
+            <img src="./prodigal.png" class="img-fluid" alt="Projeto 2">
+            <h3>Prodigal Web</h3>
+            <p class="project-desc">Uma versão web do Preditor Prodigal, uma ferramenta que desenvolvi para facilitar a análise de sequências genômicas. Com esta nova versão, os usuários agora podem acessar o Prodigal diretamente de seus navegadores, sem a necessidade de instalação ou configuração de software adicional.
+				<br>🔬 O que é o Prodigal? Prodigal é um preditor de genes procarióticos amplamente utilizado, conhecido por sua precisão e eficiência na identificação de genes em sequências de DNA. Ele é uma ferramenta essencial para pesquisadores em bioinformática e genômica.</p>
+        </div>
+        <div class="col-md-4 project">
+            <img src="./artigo.png" class="img-fluid" alt="Projeto 3">
+            <h3><a href="https://www.sciplatform.com/index.php/wjb/article/view/1284">Evaluating the use of smartphones for processing computational tasks: "A case study for the annotation of prokaryotic genomes"</a></h3>
+            <p class="project-desc">Resultados de um projeto de pesquisa, onde exploramos o potencial do Android para executar ferramentas de anotação de genomas procariontes. Utilizando Termux e Docker, conseguimos viabilizar a aplicação do Prokka, abrindo portas para uma análise mais acessível e eficiente. </p>
+        </div>
+		<div class="col-md-4 project">
+            <img src="./altool.png" class="img-fluid" alt="Projeto 1">
+            <h3><a href="https://github.com/jamirnasci/AndroidAT">Android Alignment Tool</a></h3>
+            <p class="project-desc">O Android Alignment Tool é uma ferramenta criada para android com intuito de fazer o alinhamento global de sequências biológicas com base no algoritmo de Needleman-Wunsch, além disso o app fornece uma análise estatística sobre os resultados, calculando gaps, matches e mismatches.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container my-5">
+    <h2>Contato</h2>
+	<div class="contact-links text-center">
+        <a href="https://api.whatsapp.com/send?phone=91983733745" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/150px-WhatsApp.svg.png" alt="WhatsApp" style="width: 40px;">
+        </a>
+        <a href="mailto:jamirnasci@gmail.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/100px-Gmail_icon_%282020%29.svg.png" alt="Email" style="width: 40px;">
+        </a>
+		<a href="https://www.instagram.com/jamir.nasc/">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/150px-Instagram_logo_2022.svg.png" style="width: 40px;">
+		</a>
+		<a href="https://github.com/jamirnasci">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/180px-GitHub_Invertocat_Logo.svg.png" style="width: 40px;">
+		</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-center py-4">
+    <p>&copy; 2024 jamir. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
