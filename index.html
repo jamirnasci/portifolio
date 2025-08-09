@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <h1>Meu Portfólio</h1>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou um desenvolvedor apaixonado por criar soluções criativas e eficientes. Adoro trabalhar com tecnologias modernas e transformar ideias em realidade.</p>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="habilidades">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Vue.js</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 - Meu Portfólio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
